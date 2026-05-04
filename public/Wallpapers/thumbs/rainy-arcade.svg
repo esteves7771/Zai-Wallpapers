@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 2560" width="1440" height="2560">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#05050a"/>
+      <stop offset="0.5" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="34%" r="70%">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="#ff4fd8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#05050a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="44"/></filter>
+    <pattern id="grain" width="80" height="80" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="17" r="1" fill="#fff" opacity="0.11"/>
+      <circle cx="53" cy="49" r="1" fill="#fff" opacity="0.08"/>
+      <circle cx="30" cy="68" r="1" fill="#fff" opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="#05050a" opacity="0.36"/>
+  <ellipse cx="720" cy="880" rx="835.1999999999999" ry="614.4" fill="url(#glow)" filter="url(#blur)"/>
+  <path d="M -80 512 C 288 128, 1224 716.8000000000001, 1520 307.2 L 1520 2560 L -120 2560 Z" fill="#38bdf8" opacity="0.18"/>
+  <path d="M -80 1996.8000000000002 C 288 1433.6000000000001, 936 2355.2000000000003, 1520 1740.8000000000002 L 1520 2560 L -80 2560 Z" fill="#05050a" opacity="0.5"/>
+  <g opacity="0.72" stroke="hsl(222 92% 72%)" stroke-width="3" fill="none">
+    <path d="M 259.2 460.79999999999995 L 1180.8 1587.2" opacity="0.42"/>
+    <path d="M 1180.8 563.2 L 403.20000000000005 2201.6" opacity="0.32"/>
+    <rect x="259.2" y="1587.2" width="921.6" height="460.79999999999995" rx="34" opacity="0.26"/>
+  </g>
+  <rect width="100%" height="100%" fill="url(#grain)" opacity="0.5"/>
+  <rect x="18" y="18" width="1404" height="2524" rx="54" fill="none" stroke="#fff" stroke-opacity="0.08" stroke-width="2"/>
+  <text x="115.2" y="2252.8" fill="#fff" opacity="0.78" font-family="Arial, sans-serif" font-size="46" font-weight="700">Rainy Arcade</text>
+</svg>
