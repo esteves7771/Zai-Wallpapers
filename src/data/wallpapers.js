@@ -1,7 +1,8 @@
-const photoUrl = (query, lock, width, height) =>
-  `https://loremflickr.com/${width}/${height}/${query}?lock=${lock}`;
+const photoUrl = (query, lock) =>
+  `https://source.unsplash.com/900x1600/?${encodeURIComponent(query)}&sig=${lock}`;
 
-const localAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
+const baseUrl = import.meta.env?.BASE_URL || "./";
+const localAsset = (path) => `${baseUrl}${path}`;
 
 const categorySets = [
   {
@@ -192,8 +193,8 @@ export const wallpapers = categorySets.flatMap((set, categoryIndex) =>
       category: set.category,
       tags: [...set.tags, title.split(" ")[0].toLowerCase()],
       resolution: itemIndex % 3 === 0 ? "2160 x 3840" : itemIndex % 3 === 1 ? "1440 x 3200" : "1080 x 2400",
-      thumb: photoUrl(set.query, lock, 900, 1600),
-      full: photoUrl(set.query, lock, 1440, 2560),
+      thumb: photoUrl(set.query, lock),
+      full: photoUrl(set.query, lock),
       fallbackThumb: localAsset(`wallpapers/thumbs/${id}.svg`),
       fallbackFull: localAsset(`wallpapers/full/${id}.svg`),
       featured: itemIndex < 3,
