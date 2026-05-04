@@ -2,14 +2,16 @@
   "name": "Zai Wallpapers",
   "short_name": "Zai",
   "description": "Premium dark wallpapers with daily drops.",
-  "start_url": "/",
+  "id": "/Zai-Wallpapers/",
+  "start_url": "/Zai-Wallpapers/",
+  "scope": "/Zai-Wallpapers/",
   "display": "standalone",
   "background_color": "#05050A",
   "theme_color": "#05050A",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
